@@ -250,3 +250,62 @@ html {
   object-position: center; /* Center the SVG content */
   margin-top: 20px;
 }
+
+
+.types {
+  display: flex; /* Align child elements horizontally */
+  justify-content: space-between; /* Space out the boxes evenly */
+  align-items: flex-start; /* Align items to the top */
+  gap: 100px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.languages, .libraries {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.languages:hover, .libraries:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(9, 62, 234, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.subheader {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4c61ab;
+  margin-bottom: 25px;
+}
+
+.types > div {
+  flex: 1; /* Make all boxes equal in size */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(77, 89, 145, 0.1);
+  padding: 20px;
+  padding-left: 50px;
+  text-align: left;
+  min-width: 200px;
+}
+
+.types > p {
+  font-size: 15px;
+  color: #555;
+  margin: 0px 0;
+}
+
+.types hr {
+  margin: -10px 35px 0px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-logo {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
