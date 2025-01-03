@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import Navbar from './Navbar';
 import Welcome from './Welcome';
+import About from './About';
 
 function App() {
   return (
@@ -10,6 +11,12 @@ function App() {
       <Navbar />
 
       <Welcome />
+
+      <div class="subsections">
+
+        <About />
+
+      </div>
 
     </div>
   );

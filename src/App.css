@@ -115,3 +115,42 @@ html {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   filter: brightness(1.2)
 }
+
+.section-title {
+  font-size: 60px;
+  color: #f84b5a;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+.about {
+  background-color: white;
+}
+
+
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  line-height: 22px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.about-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(9, 62, 234, 0.2);
+}
+
+.about-image img {
+  width: 210px;
+  height: auto;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
+}
