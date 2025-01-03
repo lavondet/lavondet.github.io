@@ -6,6 +6,7 @@ import About from './About';
 import Journey from './Journey';
 import Skills from './Skills';
 import Projects from './Projects';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Projects />
 
       </div>
+
+      <Footer />
 
     </div>
   );

@@ -314,3 +314,23 @@ html {
 .projects {
   margin-bottom: 100px;
 }
+
+
+.footer hr {
+  border-width: 0.4px;
+  border-color:rgb(100, 183, 221);
+}
+
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover .contact-icon {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
