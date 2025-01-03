@@ -154,3 +154,99 @@ html {
   border-radius: 50%;
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
 }
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 100px;
+}
+
+.timeline-node {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 4px solid  #6c5ce7;
+  border-radius: 50%;
+  position: absolute;
+  left: -122px; /* Align with the vertical line */
+  top: 0; /* Align to the start of each item */
+  z-index: 11; /* In front of the line */
+  transform: translateY(120%);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px; /* Align with the center of the nodes */
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, #3498db, #6c5ce7); /* Gradient color */
+  z-index: 10; /* Behind the nodes */
+}
+
+.timeline-content {
+  margin-left: 80px;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  top: -12px;
+}
+
+.timeline-content a {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #34495e;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+  text-align: left;
+  margin: 20px 90px;
+}
+
+.timeline-content li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-left: 0px;
+}
+
+.time {
+  color: rgb(48, 48, 184);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.asij-image {
+  max-width: 70px;
+  /* max-height: 100px; */
+  object-fit: cover; /* Trim excess space without distortion */
+  object-position: center; /* Center the SVG content */
+  margin-top: 20px;
+}
+
+
+.swiss-image {
+  max-width: 60px;
+  /* max-height: 100px; */
+  object-fit: cover; /* Trim excess space without distortion */
+  object-position: center; /* Center the SVG content */
+  margin-top: 10px;
+}
+
+
+.mit-image {
+  max-width: 50px;
+  /* max-height: 100px; */
+  object-fit: cover; /* Trim excess space without distortion */
+  object-position: center; /* Center the SVG content */
+  margin-top: 20px;
+}

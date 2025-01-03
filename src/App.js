@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from './Navbar';
 import Welcome from './Welcome';
 import About from './About';
+import Journey from './Journey';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <div class="subsections">
 
         <About />
+
+        <Journey />
 
       </div>
 
