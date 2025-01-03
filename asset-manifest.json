@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lavondet.github.io/static/css/main.74b52e60.css",
+    "main.js": "/lavondet.github.io/static/js/main.b90fc3d2.js",
+    "static/js/841.ff98d4a8.chunk.js": "/lavondet.github.io/static/js/841.ff98d4a8.chunk.js",
+    "index.html": "/lavondet.github.io/index.html",
+    "main.74b52e60.css.map": "/lavondet.github.io/static/css/main.74b52e60.css.map",
+    "main.b90fc3d2.js.map": "/lavondet.github.io/static/js/main.b90fc3d2.js.map",
+    "841.ff98d4a8.chunk.js.map": "/lavondet.github.io/static/js/841.ff98d4a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74b52e60.css",
+    "static/js/main.b90fc3d2.js"
+  ]
+}
