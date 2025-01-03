@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -33,4 +38,80 @@
 
 .navbar a:active {
   color: black;
+}
+
+.welcome {
+  background-color: #1c1c1c;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.welcome-line1 {
+  animation: fadeIn ease 4s forwards;
+  animation-delay: 10ms;
+  margin: 0px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.welcome-line2 {
+  color: white;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.mit-text {
+  display: inline-block;
+  color: white;
+  animation: mitColorChange 2s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes mitColorChange {
+  from {
+    color: white;
+  }
+  to {
+    color: #a31f34;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcome button {
+  background-color: transparent;
+  border-color: #f84b5a;
+  color: #f84b5a;
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 2s;
+}
+
+
+.welcome button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.2)
 }
