@@ -4,7 +4,7 @@ import React from 'react';
 function Navbar() {
     return(
       <div class="navbar">
-        <a href="#home">Home</a>
+        <a id="home-link" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#journey">Journey</a>
         <a href="#skills">Skills</a>

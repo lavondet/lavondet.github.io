@@ -83,6 +83,10 @@ html {
   color: black;
 }
 
+#home-link {
+  color: #f84b5a;
+}
+
 .welcome {
   background-color: #1c1c1c;
   background-size: 400% 400%;
