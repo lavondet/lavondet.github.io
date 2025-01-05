@@ -15,7 +15,28 @@ html {
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
   margin: 100px 0;
+  position: relative;
 }
+
+.title-container-odd::before, .title-container-even::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: #1c1c1c;
+  transform: translateY(-50%);
+}
+
+.title-container-odd::before {
+  left: 100%;
+  width: 260%;
+}
+
+.title-container-even::before {
+  left: -260%;
+  width: 260%;
+}
+
 
 .title-container-even {
   margin-left: auto; /* Push to the right */
@@ -25,6 +46,8 @@ html {
 .section-title {
   font-size: 60px;
   color: black;
+  position: relative; /* Ensure text stays above the line */
+  z-index: 1;
 }
 
 .navbar {
