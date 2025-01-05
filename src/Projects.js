@@ -4,9 +4,11 @@ import React from 'react';
 function Projects() {
     return(
         <header id="projects" class="projects">
-          <h2 class="section-title">
-            Projects
-          </h2>
+            <div class="title-container-even">
+                <h2 class="section-title">
+                    Projects
+                </h2>
+            </div>
           <p>
             Coming soon
           </p>

@@ -4,9 +4,11 @@ import React from 'react';
 function About() {
     return(
         <header id="about" class="about">
-          <h2 class="section-title">
-            About
-          </h2>
+            <div class="title-container-odd">
+            <h2 class="section-title">
+                About
+            </h2>
+            </div>
           <div class="about-container">
             <div class="about-image">
               <img src="/about-img.png" alt="picture"/>

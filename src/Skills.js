@@ -4,9 +4,11 @@ import React from 'react';
 function Skills() {
     return(
         <header id="skills" class="skills">
-          <h2 class="section-title">
-            Skills
-          </h2>
+            <div class="title-container-odd">
+                <h2 class="section-title">
+                    Skills
+                </h2>
+            </div>
           <div class="types">
             <div class="languages">
               <p class="subheader">Languages</p>

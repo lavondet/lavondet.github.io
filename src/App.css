@@ -4,7 +4,27 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+  scroll-padding-top: 80px;
+}
+
+.title-container-odd, .title-container-even {
+  background-color: #f84b5a;
+  width: 400px;
+  height: 100px;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  margin: 100px 0;
+}
+
+.title-container-even {
+  margin-left: auto; /* Push to the right */
+  margin-right: 0; /* Ensure alignment to the right */
+}
+
+.section-title {
+  font-size: 60px;
+  color: black;
 }
 
 .navbar {
@@ -116,23 +136,15 @@ html {
   filter: brightness(1.2)
 }
 
-.section-title {
-  font-size: 60px;
-  color: #f84b5a;
-  margin-top: 150px;
-  margin-bottom: 50px;
-  padding: 40px;
-}
 
 .about {
   background-color: white;
 }
 
-
-
 .about-content {
   max-width: 700px;
   margin: 0 auto;
+  margin-bottom: 180px;
   padding: 1rem 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -155,44 +167,35 @@ html {
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
 }
 
+
+
 .timeline {
   position: relative;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  padding-left: 100px;
-}
-
-.timeline-node {
-  width: 24px;
-  height: 24px;
-  background: white;
-  border: 4px solid  #6c5ce7;
-  border-radius: 50%;
-  position: absolute;
-  left: -122px; /* Align with the vertical line */
-  top: 0; /* Align to the start of each item */
-  z-index: 11; /* In front of the line */
-  transform: translateY(120%);
+  margin-bottom: 180px;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -10px; /* Align with the center of the nodes */
+  left: 50%; /* Center the line horizontally */
+  transform: translateX(-50%); /* Offset the line to align with the center */
   width: 8px;
   height: 100%;
   background: linear-gradient(to bottom, #3498db, #6c5ce7); /* Gradient color */
-  z-index: 10; /* Behind the nodes */
+  z-index: 1; /* Behind the content */
 }
 
 .timeline-content {
-  margin-left: 80px;
   padding: 15px 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  top: -12px;
+  text-align: center; /* Center text within the box */
+  position: relative;
+  z-index: 2; /* Ensure the content is above the timeline */
 }
 
 .timeline-content a {
@@ -213,16 +216,28 @@ html {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
-  margin-left: 0px;
 }
 
 .time {
   color: rgb(48, 48, 184);
 }
 
+#asij-item, #swiss-item, #mit-item {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+#asij-item:hover, #swiss-item:hover, #mit-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(9, 62, 234, 0.2);
+}
+
 .timeline-item {
   position: relative;
-  margin-bottom: 80px;
+  display: flex; /* Align items horizontally */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 180px;
+  z-index: 2;
 }
 
 .asij-image {

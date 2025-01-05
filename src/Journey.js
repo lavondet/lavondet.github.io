@@ -4,15 +4,15 @@ import React from 'react';
 function Journey() {
     return(
         <header id="journey" class="journey">
-          <h2 class="section-title">
-            Journey
-          </h2>
-
+            <div class="title-container-even">
+                <h2 class="section-title">
+                    Journey
+                </h2>
+            </div>
           <div class="timeline">
 
             <div class="timeline-item">
-              <div class="timeline-node"></div>
-              <div class="timeline-content">
+              <div id="asij-item" class="timeline-content">
                 <img src="asij.svg" alt="ASIJ Logo" class="asij-image"></img>
                 <h3>The American School in Japan</h3>
                 <p>Student | <span class="time">2020 - 2024</span></p>
@@ -28,8 +28,7 @@ function Journey() {
 
 
             <div class="timeline-item">
-              <div class="timeline-node"></div>
-              <div class="timeline-content">
+              <div id="swiss-item" class="timeline-content">
                 <img img src="swiss.svg" alt="Embassy Logo" class="swiss-image"></img>
                 <h3>Embassy of Switzerland in Japan</h3>
                 <p>Intern | <span class="time">summer of 2021 & 2023</span></p>
@@ -47,8 +46,7 @@ function Journey() {
 
 
             <div class="timeline-item">
-              <div class="timeline-node"></div>
-              <div class="timeline-content">
+              <div id="mit-item" class="timeline-content">
                 <img src="mit.svg" alt="MIT Logo" class="mit-image"></img>
                 <h3>Massachusetts Institute of Technology</h3>
                 <p>Undergraduate Student | <span class="time">2024 - 2028</span></p>
