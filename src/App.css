@@ -415,9 +415,15 @@ html {
   display: flex; /* Align child elements horizontally */
   justify-content: space-between; /* Space out the boxes evenly */
   align-items: flex-start; /* Align items to the top */
-  gap: 100px;
+  gap: 10%;
   margin: 20px auto;
   max-width: 900px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .types {
+    margin: 20px 50px;
+  }
 }
 
 @media (max-width: 480px) {
