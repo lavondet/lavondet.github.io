@@ -24,7 +24,7 @@ function About() {
                 When I'm not coding or studying, I love to swim 🏊‍♂️, listen to music 🎵, and travel 🌎. I am also currently
                 on the <a href="https://mitathletics.com/sports/mens-swimming-and-diving/roster/louis-avondet/13243"
                 target="_blank" className="roster-link">
-                MIT varsity swim and dive</a> team where I specialize in fly.
+                MIT varsity swim and dive</a> team where I specialize in butterfly.
               </p>
             </div>
           </div>
