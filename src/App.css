@@ -82,8 +82,9 @@ html {
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 0 10px;
-    transform: translateX(-10px);
+    padding: 0 2%;
+    transform: translateX(0);
+    box-sizing: border-box;
   }
 }
 
