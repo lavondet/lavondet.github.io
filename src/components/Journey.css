@@ -1,0 +1,145 @@
+
+.timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    z-index: 3;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the line horizontally */
+    transform: translateX(-50%); /* Offset the line to align with the center */
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3498db, #6c5ce7); /* Gradient color */
+    z-index: 2; /* Behind the content */
+  }
+
+  .timeline::after {
+    content: "";
+    position: absolute;
+    top: -3%;
+    left: -50%;
+    width: 200%; /* Span the entire width of the section */
+    height: 108%; /* Cover the entire section height */
+    background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust spacing between dots */
+    z-index: 1; /* Place dots behind everything */
+  }
+
+  @media (max-width: 480px) {
+    .timeline::after {
+      content: "";
+      position: absolute;
+      top: -3%;
+      left: 0%;
+      width: 100%; /* Span the entire width of the section */
+      height: 108%; /* Cover the entire section height */
+      background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
+      background-size: 20px 20px; /* Adjust spacing between dots */
+      z-index: 1; /* Place dots behind everything */
+    }
+  }
+
+
+  .timeline-content {
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within the box */
+    position: relative;
+    z-index: 3; /* Ensure the content is above the timeline */
+  }
+
+  @media (max-width: 480px) {
+    .timeline-content {
+      padding: 15px 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center text within the box */
+      position: relative;
+      z-index: 3; /* Ensure the content is above the timeline */
+      margin: 0 4%;
+    }
+  }
+
+  .timeline-content a {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #34495e;
+  }
+
+  .timeline-content ul {
+    padding: 0;
+    list-style: circle;
+    text-align: left;
+    margin: 20px 90px;
+  }
+
+  @media (max-width: 480px) {
+    .timeline-content ul {
+      padding: 0;
+      list-style: circle;
+      text-align: left;
+      margin: 20px 20px;
+    }
+  }
+
+  .timeline-content li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .time {
+    color: rgb(48, 48, 184);
+  }
+
+  #asij-item, #swiss-item, #mit-item {
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  }
+
+  #asij-item:hover, #swiss-item:hover, #mit-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(9, 62, 234, 0.2);
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex; /* Align items horizontally */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 180px;
+    z-index: 2;
+  }
+
+  .asij-image {
+    max-width: 70px;
+    /* max-height: 100px; */
+    object-fit: cover; /* Trim excess space without distortion */
+    object-position: center; /* Center the SVG content */
+    margin-top: 20px;
+  }
+
+  .swiss-image {
+    max-width: 60px;
+    /* max-height: 100px; */
+    object-fit: cover; /* Trim excess space without distortion */
+    object-position: center; /* Center the SVG content */
+    margin-top: 10px;
+  }
+
+
+  .mit-image {
+    max-width: 50px;
+    /* max-height: 100px; */
+    object-fit: cover; /* Trim excess space without distortion */
+    object-position: center; /* Center the SVG content */
+    margin-top: 20px;
+  }
