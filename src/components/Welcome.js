@@ -42,23 +42,6 @@ function Welcome() {
               width: 1,
             },
           },
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "attract", // Makes particles move away from the cursor
-              },
-            },
-            modes: {
-              repulse: {
-                distance: 100, // Distance particles move away from the cursor
-                duration: 0.4,
-              },
-              push: {
-                quantity: 4, // Number of particles added on click
-              },
-            },
-          },
         }}
       />
       <h1 class="welcome-line1">Hello, I'm Louis.</h1>
